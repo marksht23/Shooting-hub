@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -8,8 +7,6 @@
   --text: #e0e5ea;
   --muted: #929aa6;
   --accent: #d9f99d;
-  --button-start: #6c5ce7;
-  --button-end: #a855f7;
 }
 
 * {
@@ -49,20 +46,20 @@ body {
 }
 
 .hero {
-  padding: 85px 0 65px;
+  padding: 45px 0 20px;
 }
 
 .eyebrow {
   color: var(--accent);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .hero h1 {
-  margin: 18px 0;
-  font-size: clamp(38px, 7vw, 64px);
-  letter-spacing: -3px;
+  margin: 16px 0 12px;
+  font-size: 28px;
+  letter-spacing: -1px;
 }
 
 .hero p {
@@ -75,12 +72,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 18px;
+  margin: 30px 0 16px;
 }
 
 .section-heading h2 {
   font-size: 13px;
-  letter-spacing: 1px;
+  letter-spacing: .3px;
 }
 
 .section-heading span {
@@ -89,27 +86,27 @@ body {
 }
 
 .script-card {
-  padding: 28px;
+  padding: 16px;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 18px;
+  border-radius: 16px;
 }
 
 .script-header {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .script-icon {
-  width: 52px;
-  height: 52px;
+  width: 60px;
+  height: 60px;
   display: grid;
   place-items: center;
   background: #1a2418;
   color: var(--accent);
-  border: 1px solid #3c4b39;
-  border-radius: 13px;
+  border-radius: 12px;
+  font-size: 21px;
   font-weight: 800;
 }
 
@@ -119,42 +116,40 @@ body {
 
 .script-info h3 {
   margin: 0 0 6px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .script-info span {
   color: var(--muted);
-  font-size: 10px;
-  letter-spacing: 1px;
+  font-size: 11px;
 }
 
 .status {
-  padding: 8px 13px;
-  color: var(--accent);
-  border: 1px solid #484a32;
+  padding: 6px 10px;
+  color: #00d66b;
+  background: #07351f;
   border-radius: 20px;
   font-size: 11px;
 }
 
 .description {
-  margin: 25px 0 18px;
+  margin: 18px 0;
   color: var(--muted);
   font-size: 14px;
   line-height: 1.6;
 }
 
 .code-box {
-  padding: 18px;
+  padding: 16px;
   background: #0b0d10;
-  border: 1px solid #2a323a;
   border-radius: 11px;
 }
 
 .code-label {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .code-box code {
@@ -168,36 +163,33 @@ body {
 
 .copy-button {
   width: 100%;
-  min-height: 48px;
-  margin-top: 18px;
+  min-height: 54px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(135deg, var(--button-start), var(--button-end));
-  color: #fff;
-  border: 1px solid #8b5cf6;
+  background: var(--accent);
+  color: #10140b;
+  border: none;
   border-radius: 10px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  transition: all .2s ease;
-  box-shadow: 0 4px 18px #6655ff33;
+  transition: .2s ease;
 }
 
 .copy-button:hover {
-  filter: brightness(1.15);
+  background: #c5ee82;
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px #8b5cf655;
 }
 
 .copy-button:active {
-  transform: scale(.97);
+  transform: scale(.98);
 }
 
 .copy-button.copied {
-  background: linear-gradient(135deg, #6c5ce7, #8b5cf6);
-  color: #fff;
+  background: #b6e68a;
 }
 
 .copy-icon {
@@ -213,8 +205,8 @@ body {
 }
 
 footer {
-  margin-top: 65px;
-  padding: 25px 0;
+  margin-top: 20px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--border);
@@ -228,11 +220,11 @@ footer {
   }
 
   .hero {
-    padding: 60px 0 45px;
+    padding: 40px 0 15px;
   }
 
   .script-card {
-    padding: 18px;
+    padding: 14px;
   }
 
   .script-header {
@@ -247,7 +239,6 @@ footer {
     padding: 14px;
   }
 }
-
     font-size: 11px;
   }
 }
